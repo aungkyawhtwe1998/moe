@@ -1,0 +1,61 @@
+$primary: #0e0f29;
+$dark: #0f0f13;
+$secondary: #E87323;
+$light: #f1f2f3;
+$success: #01CED3;
+$warning:#E3B341;
+$danger:#E34C26;
+$border-radius: 1.09rem;
+$border-width:2.5px;
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+
+.navbar{
+    z-index: 3000;
+}
+.myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+.home-panel {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+.divider{
+    width : 100px;
+    height : 5px;
+}
+
+.course-card{
+    margin: 8px;
+    padding: 8px;
+    transition: 0.8s;
+}
+
+.course-card:hover{
+    transform: scale(1.02);
+}
+
+.profiles-img{
+    background-size: cover;
+    background-position: center;
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #E87323;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    font-weight: bold;
+    color: #E87323;
+}
