@@ -26,7 +26,7 @@ $(function () {
     $(".search-icon").click(function () {
         $(this).toggleClass('fa-times');
         $(this).next().toggleClass('d-none').animate({
-            width:'200px'
+            width:'150px'
         }); 
         
       });
