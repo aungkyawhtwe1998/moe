@@ -1,54 +1,3 @@
-$primary: #0e0f29;
-$dark: #0f0f13;
-$secondary: #e87323;
-$light: #f1f2f3;
-$success: #01ced3;
-$warning: #e3b341;
-$danger: #e34c26;
-$border-radius: 1.09rem;
-$border-width: 2.5px;
-@import "../node_modules/bootstrap/scss/bootstrap";
-
-// Card
-.course-card {
-  margin: 8px;
-  padding: 8px;
-  transition: 0.8s;
-}
-.course-card:hover {
-  transform: scale(1.02);
-}
-// End Card
-
-//General
-
-.divider {
-  width: 100px;
-  height: 5px;
-}
-a {
-  text-decoration: none;
-}
-a:hover {
-  font-weight: bold;
-  color: #e87323;
-}
-.profiles-img {
-  background-size: cover;
-  background-position: center;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 4px solid #e87323;
-}
-.btn {
-  transition: 0.8s !important;
-}
-.btn:hover {
-  transform: scale(1.06) !important;
-}
-// End General
-
 /* search */
 .search-icon {
   position: relative;
@@ -60,6 +9,13 @@ a:hover {
   width: 0px;
 }
 /* End Search */
+
+.btn {
+  transition: 0.8s !important;
+}
+.btn:hover {
+  transform: scale(1.06) !important;
+}
 
 /* Nav */
 .navbar {
@@ -114,6 +70,8 @@ a:hover {
   height: 300px;
   justify-content: center;
   align-items: center;
+  /* background-color: rgba(255, 255, 255, 0.397);
+      backdrop-filter: blur(5px); */
   padding: 10px;
   font-weight: bolder;
 }
@@ -173,22 +131,20 @@ a:hover {
   object-position: center;
 }
 /* End Course Style */
-// Blog
 .blog-home {
-    background-position: center;
-    background-size: cover;
-    background-image: url("https://myanmaronlineentrepreneur.com/wp-content/uploads/2021/08/blog-bg.jpg");
-    width: 100%;
-    height: 70vh;
-  }
-  
-  .blog-overlay {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.253);
-    min-height: 100%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-  }
-// End Blog  
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://myanmaronlineentrepreneur.com/wp-content/uploads/2021/08/blog-bg.jpg");
+  width: 100%;
+  height: 70vh;
+}
+
+.blog-overlay {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.253);
+  min-height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}

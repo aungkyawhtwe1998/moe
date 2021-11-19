@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<div class="loader-container" style="z-index: 4000 ;">
+    <div class="loader">Loading...</div>
+</div>
 <html lang="en">
 
 <head>
@@ -6,19 +9,135 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MOE | Myanmar Online Entrepreneur</title>
-  <link rel="stylesheet" href="assets/app.css">
+  <link rel="icon" href="assets/images/moe-myanmar-online-entrepreneur.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
+  <link rel="stylesheet" href="assets/app.css">
+  <style>
+    .loader-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 2000;
+    }
+
+    .loader {
+        color: #F68E13;
+        font-size: 90px;
+        text-indent: -9999em;
+        overflow: hidden;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        margin: 72px auto;
+        position: relative;
+        -webkit-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+        animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+    }
+
+    @-webkit-keyframes load6 {
+        0% {
+            box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+        }
+
+        5%,
+        95% {
+            box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+        }
+
+        10%,
+        59% {
+            box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+        }
+
+        20% {
+            box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+        }
+
+        38% {
+            box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+        }
+
+        100% {
+            box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+        }
+    }
+
+    @keyframes load6 {
+        0% {
+            box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+        }
+
+        5%,
+        95% {
+            box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+        }
+
+        10%,
+        59% {
+            box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+        }
+
+        20% {
+            box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+        }
+
+        38% {
+            box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+        }
+
+        100% {
+            box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+        }
+    }
+
+    @-webkit-keyframes round {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes round {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+</style>
 </head>
 
 <body>
   <!--Nav Bar-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm position-fixed top-0 w-100">
+  <nav class="navbar navbar-expand-lg navbar-light border-bottom shadow-sm position-fixed top-0 w-100">
     <div class="container">
       <a class="navbar-brand" href="#"><img src="assets/images/moe-myanmar-online-entrepreneur.png" width="80px" alt=""></a>     
       <div class="d-flex justify-content-center align-items-center">
-        <div class="d-lg-none d-flex mx-2">
-          <a class="mx-3" href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
-          <a class="" href="#"><i class="fa fa-search fa-2x"></i></a>
+        <div class="d-lg-none d-flex mx-2 justify-content-center align-items-center px-3">
+          <a class="" href="#"><i class="fa fa-shopping-cart "></i></a>
+          <form class="form-check-inline px-3">      
+            <i class="search-icon fa fa-search"></i>      
+            <input type="text" class="form-control-sm search-input rounded d-none " placeholder="Search here">            
+          </form>
         </div>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -27,7 +146,7 @@
         </button>
       </div>
       
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse justify-content-center align-items-center" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-md-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">HOME</a>
@@ -39,20 +158,21 @@
             <a class="nav-link" href="#">SERVICES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">BOOKS</a>
+            <a class="nav-link" href="courses.html">BOOKS</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            <a class="nav-link dropdown-toggle" href="courses.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               COURSES
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="courses.html">All</a></li>
               <li><a class="dropdown-item" href="#">Class SNS Study</a></li>
               <li><a class="dropdown-item" href="#">Note Session</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">BLOG</a>
+            <a class="nav-link" href="blog.html">BLOG</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">CONTACT</a>
@@ -60,12 +180,13 @@
           <li class="nav-item">
             <a class="nav-link" href="#">ACCOUNT</a>
           </li>
-         
-
         </ul> 
-        <div class="d-none d-lg-block d-flex mx-2">
-          <a class="mx-3" href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
-          <a class="" href="#"><i class="fa fa-search fa-2x"></i></a>
+        <div class="d-flex">
+          <a class="" href="#"><i class="fa fa-shopping-cart"></i></a>
+          <form class="form-check-inline">      
+            <i class="search-icon fa fa-search"></i>      
+            <input type="text" class="form-control-sm search-input rounded d-none " placeholder="Search here">            
+          </form>
         </div>    
 
       </div>
@@ -74,22 +195,21 @@
   </nav>
   <!--End Nav Bar-->
 
-  <div class="container-fluid mt-5 pt-5">
-    <div class="row min-vh-50">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="text-center">
-            <div class="home-panel p-3">
-              <h1>MYANMAR ONLINE ENTREPRENEUR</h1>
-            </div>
-
-            <video loop="loop" class="myvideo" autoplay playsinline muted >
-              <source type="video/mp4" src="https://myanmaronlineentrepreneur.com/wp-content/uploads/2021/09/FMS-Highlight-V1.mp4" />              
-            </video>
-          </div>
+  <div class="container ">
+    <div class="row align-items-center justify-content-center">
+      <div class="text-center d-flex flex-column overlay p-3">
+        <div class="home-text">
+          <h1 class="display-3 fw-bolder rounded mb-3 txt-shadow animate__animated animate__zoomIn animate__delay-2s">MYANMAR ONLINE ENTREPRENEUR</h1>
+          <h4 class="text-black fw-bold txt-shadow animate__animated animate__zoomIn animate__delay-3s">To enroll our free and paid couorses</h4>
+          <button class="btn btn-primary mt-3 animate__animated animate__zoomIn animate__delay-4s">Register Here</button>
         </div>
+       
       </div>
-    </div>
+      <video loop="loop" class="bg-video" autoplay playsinline muted >
+        <source type="video/mp4" src="https://myanmaronlineentrepreneur.com/wp-content/uploads/2021/09/FMS-Highlight-V1.mp4" />              
+      </video>              
+    </div>        
+    <a href="#" class="btn-up d-none bg-light p-2 border border-secondary shadow"><i class="fa fa-arrow-alt-circle-up"></i></a>
   </div>
   <!-- About -->
   <div class="container bg-light rounded" id="about">
@@ -496,13 +616,8 @@
       <button class="btn btn-primary">Read More Blogs</button>
     </div>
   </div>
-  <div class="container bg-secondary rounded my-3">
-    <div class="d-flex justify-content-between align-items-center p-3">
-      <h5 class="text-white">To enroll our free and paid couorses</h5>
-      <button class="btn btn-primary">Register Here</button>
-    </div>
-  </div>
-  <div class="container bg-primary rounded">
+  <!-- Footer -->
+  <div class="container bg-primary rounded mt-3">
     <div class="row p-3">
       <div class="col-12 col-lg-4">
         <div class="row">
@@ -543,21 +658,21 @@
               <div class="divider bg-secondary my-2"></div>
               <ul class="list-unstyled">
                 <li>
-                  <h6 class="text-white fw-bold"><i class="fa fa-address-card"></i>Address</h6>
+                  <h6 class="text-white fw-bold"><i class="text-secondary fa fa-address-card"></i> Address</h6>
                   <span class="text-white text-decoration-none">
                     
                     No. 1186, Pin Lon Road, North-Dagon Township, Yangon
                   </sp>
                 </li>
                 <li>
-                  <h6 class="text-white fw-bold"><i class="fa fa-mobile-phone"></i>Phone Number</h6>
+                  <h6 class="text-white fw-bold"><i class="text-secondary fa fa-mobile"></i> Phone Number</h6>
                   <span class="text-white text-decoration-none">
                     
                     No. 1186, Pin Lon Road, North-Dagon Township, Yangon
                   </sp>
                 </li>
                 <li>
-                  <h6 class="text-white fw-bold"><i class="fa fa-envelope"></i>E-Mail Address</h6>
+                  <h6 class="text-white fw-bold"><i class="text-secondary fa fa-envelope"></i> E-Mail Address</h6>
                   <span class="text-white text-decoration-none">                    
                     moeonlinetraining@gmail.com, support@myanmaronlineentrepreneur.com
                   </sp>
@@ -565,6 +680,18 @@
                 
               </ul>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="d-flex flex-column flex-lg-row flex-md-row justify-content-center justify-content-lg-between align-items-center">
+        <h5>© Myanmar Online Entrepreneur. 2021 All Right Reserved. Powered by MISL.</h5>
+        <div>
+          <a href="#"><i class="fab fa-facebook-f mx-1"></i></a>
+          <a href="#"><i class="fab fa-instagram mx-1"></i></a>
+          <a href="#"><i class="fab fa-youtube mx-1"></i></a>
         </div>
       </div>
     </div>
